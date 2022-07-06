@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>test_02</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-title">
+        <h1>hello from space</h1>
+      </div>
+      <div class="main-container">
+        <div id="sideNav" class="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">
+            <i class="bx bx-x"></i>
+          </a>
+          <div class="menu">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
+        <!-- to open the sidenav -->
+
+        <div id="main-content">
+          <div id="openBtn">
+            <a href="#" class="openbtn" onclick="openNav()">
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </div>
+          <div class="radio-btn-box">
+            <div class="radio-btn-text">
+              <p>Choose dimensions for an image</p>
+            </div>
+            <div class="radio-btn-row">
+              <div class="radio-btn">
+                <input type="radio" name="img" value="img-1" id="img1" onclick='checkValue(1)' />
+                <label for="img1">800x500</label>
+              </div>
+              <div class="radio-btn">
+                <input type="radio" name="img" value="img-2" id="img2" onclick='checkValue(2)' />  
+                <label for="img2">290x170</label>
+              </div>
+              <div class="radio-btn">
+                <input type="radio" name="img" value="img-3" id="img3" onclick='checkValue(3)'/>
+                <label for="img3">500x300</label>
+              </div>
+            </div>
+            </div>
+            <div class="image-boxes">
+                <img src="img/img (1).jpg" id="image1" />
+                <img src="img/img (5).jpg" id="image2" />
+                <img src="img/img (6).jpg" id="image3" />
+              </div>
+          </div>
+          <div class="footer">
+            <p>By Mariam Nozadze</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  </body>
+</html>
